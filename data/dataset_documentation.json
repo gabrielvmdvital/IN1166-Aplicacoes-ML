@@ -1,0 +1,33 @@
+{
+	"input_params":{
+		"lightspeed": "Speed of light [10^9*m/s]",
+		"lambda": "reference wavelength [um]",
+		"NumCh": "Number of channels",
+		"ChSpacing": "Channel spacing [GHz]",
+		"BaudRate": "Baud-rate [GHz]", 
+		"NumSpans": "Number of spans", 
+		"DispPar": "dispersion parameter [ps/nm/km]", 
+		"Spans_gamma": "Nonlinearity coefficient in [1/W/km]", 
+		"Spans_beta2": "Dispersion coefficient [ps^2/km]", 
+		"Spans_alpha": "Fiber loss coefficient [dB/km]", 
+		"Spans_L": "Span length [km]", 
+		"Spans_PdBmCh": "Average input power [dBm]", 
+		"Spans_ModFormatCh": "Channel modulation", 
+		"Spans_DeltaPdBIntLeft": "Difference between the power of the signal of the central channel and the channel immediately to the left.", 
+		"Spans_ModFormatIntLeft": "Modulation of the channel immediately to the left.", 
+		"Spans_DeltaPdBIntRight": "Difference between the power of the signal of the central channel and the channel immediately to the right.", 
+		"Spans_ModFormatIntRight": "Modulation of the channel immediately to the right.", 
+		"Spans_Fn": "Noise figure", 
+		"Spans_SpanLossdB": "Span Loss [dB]" 
+	},
+	
+	"outputs_params":{
+	"PChOptdBm": "Optimal channel power [dBm]",
+	"NLIN_Power": "Nonlinear interference noise", 
+	"OSNRdB_NL": "optical signal-to-noise ratio with NLIN interference", 
+	"BER_NL": "Bit error rate with NLIN interference", 
+	"OSNRdB": "Optical signal-to-noise ratio", 
+	"BER": "Bit error rate"
+	}
+	
+}

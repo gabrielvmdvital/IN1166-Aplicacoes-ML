@@ -1,0 +1,101 @@
+{
+    "input_params": {
+        "lightspeed": {
+            "description": "Speed of light [10^9*m/s]",
+            "value": 0.299792458
+        },
+        "lambda": {
+            "description": "reference wavelength [um]",
+            "value": 1.55
+        },
+        "NumCh": {
+            "description": "Number of channels",
+            "value": [5, 7, 9, 11, 13, 15]
+        },
+        "ChSpacing": {
+            "description": "Channel spacing [GHz]",
+            "value": 50
+        },
+        "BaudRate": {
+            "description": "Baud-rate [GHz]",
+            "value": 28
+        },
+        "NumSpans": {
+            "description": "Number of spans",
+            "value": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+        },
+        "DispPar": {
+            "description": "dispersion parameter [ps/nm/km]",
+            "value": [16.7,  3.8, 20.1]
+        },
+        "Spans_gamma": {
+            "description": "Nonlinearity coefficient in [1/W/km]",
+            "value": [1.3, 1.5, 0.8]
+        },
+        "Spans_beta2": {
+            "description": "Dispersion coefficient [ps^2/km]",
+            "value": [21.2999849315664, 4.8467031580809765, 25.63650880984938]
+        },
+        "Spans_alpha": {
+            "description": "Fiber loss coefficient [dB/km]",
+            "value": [0.2, 0.22, 0.17]
+        },
+        "Spans_L": {
+            "description": "Span length [km]",
+            "value": [80, 90, 100, 110, 120]
+        },
+        "Spans_PdBmCh": {
+            "description": "Average input power [dBm]",
+            "value": [-3.0, -2.5, -2.0, -1.5, -1.0, -0.5, 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0]
+
+        },
+        "Spans_ModFormatCh": {
+            "description": "Channel modulation",
+            "value": ["DP-QPSK", "DP-16QAM", "DP-64QAM"]
+        },
+        "Spans_DeltaPdBIntLeft": {
+            "description": "Difference between the power of the signal of the central channel and the channel immediately to the left.",
+            "value": 0
+        },
+        "Spans_ModFormatIntLeft": {
+            "description": "Modulation of the channel immediately to the left.",
+            "value": ["DP-QPSK", "DP-16QAM", "DP-64QAM"]
+        },
+        "Spans_DeltaPdBIntRight": {
+            "description": "Difference between the power of the signal of the central channel and the channel immediately to the right.",
+            "value": 0
+        },
+        "Spans_ModFormatIntRight": {
+            "description": "Modulation of the channel immediately to the right.",
+            "value": ["DP-QPSK", "DP-16QAM", "DP-64QAM"]
+        },
+        "Spans_Fn": {
+            "description": "Noise figure",
+            "value": "10^(16/10)"
+        },
+        "Spans_SpanLossdB": {
+            "description": "Span Loss [dB]",
+            "value": 0
+        }
+    },
+    "outputs_params": {
+        "PChOptdBm": {
+            "description": "Optimal channel power [dBm]"
+        },
+        "NLIN_Power": {
+            "description": "Nonlinear interference noise"
+        },
+        "OSNRdB_NL": {
+            "description": "optical signal-to-noise ratio with NLIN interference"
+        },
+        "BER_NL": {
+            "description": "Bit error rate with NLIN interference"
+        },
+        "OSNRdB": {
+            "description": "Optical signal-to-noise ratio"
+        },
+        "BER": {
+            "description": "Bit error rate"
+        }
+    }
+}
